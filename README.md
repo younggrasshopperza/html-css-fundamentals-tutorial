@@ -1,1 +1,1 @@
-# Basic HTML document with a heading and a paragraph
+# Part 1: Basic HTML document with a heading and a paragraph
