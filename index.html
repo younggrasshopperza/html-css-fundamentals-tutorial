@@ -1,46 +1,36 @@
-<!-- Creating an unordered list, ordered list and table -->
+<!-- Creating a form -->
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My fifth HTML document</title>
+    <title>Creating a form</title>
   </head>
   <body>
-    <h2>Lists</h2>
-    <h3>Unordered List</h3>
-    <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-    </ul>
-    
-    <h3>Ordered List</h3>
-    <ol>
-      <li>Step 1</li>
-      <li>Step 2</li>
-      <li>Step 3</li>
-    </ol>
-    <h2>Tables</h2>
-  <table>
-    <tr>
-      <th>Name</th>
-      <th>Surname</th>
-      <th>Age</th>
-    </tr>
-    <tr>
-      <td>Chuck</td>
-      <td>Ben</td>
-      <td>Harry</td>
-    </tr>
-    <tr>
-      <td>Norris</td>
-      <td>Franklin</td>
-      <td>Potter</td>
-    </tr>
-    <tr>
-        <td>66</td>
-        <td>72</td>
-        <td>19</td>
-    </tr>
-  </table>
+    <form>
+        <h1>Application Form</h1>
+        <hr>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="name">Surname:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="email">Phone number:</label>
+        <input type="tel" id="phone" name="phone" min="10" max="10" required><br><br>
+        <label for="date">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" required><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+        Gender:<br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+        <label for="colour">Favourite Colour:</label>
+        <input type="color" required><br><br>
+        <label for="female">Profile picture: </label>
+        <input type="file"><br>
+        <hr><br>
+        <input type="submit" value="Submit">
+      </form>
   </body>
 </html>
