@@ -1,36 +1,30 @@
-<!-- Creating a form -->
+<!-- Introduction to CSS -->
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Creating a form</title>
-  </head>
-  <body>
-    <form>
-        <h1>Application Form</h1>
-        <hr>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-        <label for="name">Surname:</label>
-        <input type="text" id="name" name="name" required><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="email">Phone number:</label>
-        <input type="tel" id="phone" name="phone" min="10" max="10" required><br><br>
-        <label for="date">Birthday:</label>
-        <input type="date" id="birthday" name="birthday" required><br><br>
-        <label for="age">Age:</label>
-        <input type="number" id="age" name="age" required><br><br>
-        Gender:<br>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label><br>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label><br><br>
-        <label for="colour">Favourite Colour:</label>
-        <input type="color" required><br><br>
-        <label for="female">Profile picture: </label>
-        <input type="file"><br>
-        <hr><br>
-        <input type="submit" value="Submit">
-      </form>
-  </body>
+<head>
+  <style>
+    /* Basic syntax */
+    #my-id {
+      background-color: blue;
+    }
+
+    /* Selecting by Class */
+    .my-class {
+      font-size: 16px;
+      color: red;
+    }
+
+    /* Selecting by Element */
+    h1 {
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div id="my-id">
+    <h1>Hello World!</h1>
+    <p class="my-class">This is some text.</p>
+    <br>
+  </div>
+</body>
 </html>
