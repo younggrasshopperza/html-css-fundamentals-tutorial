@@ -1,30 +1,40 @@
-<!-- Introduction to CSS -->
+<!-- Layout and Positioning -->
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Layout and Positioning</title>
   <style>
-    /* Basic syntax */
-    #my-id {
-      background-color: blue;
+    /* Using flexbox for layout */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    /* Selecting by Class */
-    .my-class {
-      font-size: 16px;
-      color: red;
+    /* Positioning elements */
+    .box {
+      position: absolute;
+      top: 20px;
+      left: 30px;
     }
 
-    /* Selecting by Element */
-    h1 {
-      text-transform: uppercase;
+    /* Creating a responsive design */
+    @media (max-width: 768px) {
+      .container {
+        flex-wrap: wrap;
+      }
     }
   </style>
 </head>
 <body>
-  <div id="my-id">
-    <h1>Hello World!</h1>
-    <p class="my-class">This is some text.</p>
-    <br>
+  <div class="container">
+    <div class="box">
+      <p>This is an example of a box positioned using CSS.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, dolore? Dolores beatae consequatur nisi, quidem perferendis, excepturi ipsum harum, alias unde illum voluptatem debitis. Doloremque dolorem cum libero quod praesentium</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, dolore? Dolores beatae consequatur nisi, quidem perferendis, excepturi ipsum harum, alias unde illum voluptatem debitis. Doloremque dolorem cum libero quod praesentium<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, dolore? Dolores beatae consequatur nisi, quidem perferendis, excepturi ipsum harum, alias unde illum voluptatem debitis. Doloremque dolorem cum libero quod praesentium<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, dolore? Dolores beatae consequatur nisi, quidem perferendis, excepturi ipsum harum, alias unde illum voluptatem debitis. Doloremque dolorem cum libero quod praesentium   </p>
+    </div>
   </div>
 </body>
 </html>
