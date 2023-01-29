@@ -1,40 +1,40 @@
-<!-- Layout and Positioning -->
+<!-- CSS: Typography and Text -->
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Layout and Positioning</title>
+    <title>Typography and Text</title>
   <style>
-    /* Using flexbox for layout */
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    /* Styling text */
+    p {
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.5;
     }
 
-    /* Positioning elements */
-    .box {
-      position: absolute;
-      top: 20px;
-      left: 30px;
+    /* Using web fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+    h1 {
+      font-family: 'Montserrat', sans-serif;
     }
 
-    /* Creating a responsive design */
-    @media (max-width: 768px) {
-      .container {
-        flex-wrap: wrap;
-      }
+    /* Creating headings, paragraphs and lists */
+    h1, h2, h3 {
+      font-weight: bold;
+    }
+
+    ul {
+      list-style-type: square;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="box">
-      <p>This is an example of a box positioned using CSS.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, dolore? Dolores beatae consequatur nisi, quidem perferendis, excepturi ipsum harum, alias unde illum voluptatem debitis. Doloremque dolorem cum libero quod praesentium</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, dolore? Dolores beatae consequatur nisi, quidem perferendis, excepturi ipsum harum, alias unde illum voluptatem debitis. Doloremque dolorem cum libero quod praesentium<br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, dolore? Dolores beatae consequatur nisi, quidem perferendis, excepturi ipsum harum, alias unde illum voluptatem debitis. Doloremque dolorem cum libero quod praesentium<br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, dolore? Dolores beatae consequatur nisi, quidem perferendis, excepturi ipsum harum, alias unde illum voluptatem debitis. Doloremque dolorem cum libero quod praesentium   </p>
-    </div>
-  </div>
+  <h1>Hello World!</h1>
+  <p>This is some text styled with CSS.</p>
+  <ul>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+  </ul>
 </body>
 </html>
